@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<!-- all code, unless otherwise stated, was written by Jacob H-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SHM and Rotational Pendulum Sim</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div id="controlPanel">
+		<div id="controlPanelDrag"></div>
+		
+		<div id="controlPanelButtons">
+			<button id="pauseBtn" onclick="paused = !paused;" class="configBtn">
+				<image src="images/pause.png" class="btnIcon"></image>
+			</button>
+			<button id="resetBtn" class="configBtn" onclick="reset();">
+				<image src="images/reset.png" class="btnIcon" id="resetIcon"></image>
+			</button>
+			<button id="waveBtn" class="configBtn" onclick="wave();">
+				<image src="images/mind_blown.webp" class="btnIcon" id="resetIcon"></image>
+			</button>
+			<button id="waveBtn" class="configBtn" onclick="dizzy();">
+				<image src="images/dizzy.webp" class="btnIcon" id="resetIcon"></image>
+			</button>
+		</div>
+	</div>
+
+	<div id="sideBar">
+		
+	</div>
+
+	<canvas id="renderCanvas"></canvas>
+
+	<script src="box.js"></script>
+	<script src="selectionBox.js"></script>
+	<script src="controlPanel.js"></script>
+	<script src="draw.js"></script>
+	<script src="vector2d.js"></script>
+	<script src="RotationalPendulum.js"></script>
+	<script src="SHMPendulum.js"></script>
+  <script src="main.js"></script>
+	<script src="camera.js"></script>
+
+
+		
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

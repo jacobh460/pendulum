@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'consolas';
+    src: url('consolas/CONSOLA.TTF');
+}
+
+html {
+  height: 100%;
+  width: 100%;
+	font-family: consolas;
+}
+
+canvas
+{
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:-1;
+}
+
+#controlPanel
+{
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 400px;
+	height: 300px;
+	background-color: darkgray;
+	opacity: 60%;
+}
+
+#controlPanelDrag
+{
+	cursor: grab;
+	width:100%;
+	height:20px;
+	background-color:gray;
+}
+
+.controlPanelProperty
+{
+	display:flex;
+	justify-content: flex-start;
+	align-items:center;
+	margin-left: 10px;
+	margin-top: 10px;
+	height:20px;
+	white-space:unset;
+}
+
+input
+{
+	background-color: #2a3438;
+	border-width: 0px;
+	color:white;
+	transform: translateY(-2px);
+	margin-left: 10px;
+}
+
+input:focus
+{
+	outline: none !important;
+  border:1px solid white;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.configBtn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0);
+	bottom: 0px;
+	border-width: 0px;
+	
+	margin-bottom: 5px;
+}
+
+.btnIcon
+{
+	width: 40px;
+	height: 40px;
+	cursor: grab;
+}
+
+#controlPanelButtons
+{
+	position:absolute;
+	bottom:0px;
+}
+
+#resetIcon
+{
+	width:35px;
+	height:35px;
+	margin-bottom:2px;
+}
